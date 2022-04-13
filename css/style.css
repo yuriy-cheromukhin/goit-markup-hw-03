@@ -15,13 +15,11 @@ h5,
 h6 {
   margin: 0;
 }
-
 ul,
 ol {
   margin: 0;
   padding-left: 0;
 }
-
 img {
   display: block;
   min-width: 100%;
@@ -104,6 +102,7 @@ section {
   background-color: #ffffff;
 }
 .header-logo {
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -115,7 +114,6 @@ section {
 .header-logo-studio {
   color: #000000;
 }
-
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -138,6 +136,7 @@ section {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--adress-font-color);
+  display: block;
 }
 .header-mail:hover,
 .header-mail:focus {
@@ -149,6 +148,7 @@ section {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--adress-font-color);
+  display: block;
 }
 .header-tel:hover,
 .header-tel:focus {
@@ -156,15 +156,12 @@ section {
 }
 
 /* ----------HERO----------  */
+
 .hero {
   background-color: var(--accent-backgraund-color);
   padding-top: 200px;
   padding-bottom: 200px;
-}
-.hero > .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 .hero-title {
   width: 696px;
@@ -175,6 +172,7 @@ section {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--first-title-color);
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 .hero-btn {
@@ -182,9 +180,6 @@ section {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
@@ -197,6 +192,7 @@ section {
 .hero-btn:focus {
   background: #188ce8;
 }
+
 /* ----------BENEFITS----------  */
 
 .benefits {
@@ -208,6 +204,9 @@ section {
 .benefits-list > li:not(:first-child) {
   margin-left: 30px;
 }
+.benefits-list li {
+  width: 270px;
+}
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
@@ -215,16 +214,16 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-title-color);
-  width: 270px;
   margin-bottom: 10px;
 }
 .benefits-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  width: 270px;
 }
+
 /* ----------ABOUT----------  */
+
 .about > .container {
   flex-direction: column;
   display: flex;
@@ -247,23 +246,15 @@ section {
   letter-spacing: 0.03em;
   color: var(--second-title-color);
 }
+
 /* ----------TEAM----------  */
 
-.team > .container {
-  display: flex;
-  flex-direction: column;
-}
 .team-list {
   display: flex;
 }
-.team-list-item > img {
-  margin-bottom: 30px;
-}
-
 .team {
   background-color: #f5f4fa;
 }
-
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -271,21 +262,21 @@ section {
   letter-spacing: 0.03em;
   color: var(--second-title-color);
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 .team-list-item:not(:last-child) {
   margin-right: 30px;
 }
 .team-list-item {
-  display: flex;
-  flex-direction: column;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
+}
+.worker-data {
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 .worker {
   font-weight: 500;
@@ -293,32 +284,27 @@ section {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-font-color);
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 10px;
+  text-align: center;
 }
 .position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
+
 <!-- /* ----------PORTFOLIO---------- */ -->
+
 .portfolio {
   padding-top: 105px;
   padding-bottom: 83px;
 }
-.portfolio > .container {
-  display: flex;
-  flex-direction: column;
-}
 .filter-list {
   display: flex;
   margin-bottom: 34px;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
 }
 .filter-list > li:not(:first-child) {
   margin-left: 8px;
@@ -359,18 +345,15 @@ section {
   margin-top: -30px;
   margin-left: -30px;
 }
-
 .work-list-item {
   margin-top: 30px;
   margin-left: 30px;
 }
-
 .work-list-item {
   background: #ffffff;
   box-sizing: border-box;
   width: 370px;
 }
-
 .description {
   width: 370px;
   padding: 20px 24px;
@@ -405,12 +388,12 @@ section {
 }
 .footer-logo {
   display: block;
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--focus-font-color);
-  width: 145px;
   margin-bottom: 20px;
 }
 .footer-logo-studio {
